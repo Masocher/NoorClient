@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #242423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_form {
+    background-color: #333533;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+}
