@@ -8,9 +8,27 @@
 </head>
 <body>
     <div class="sign_form">
+        <div class="title_box">Sign Up</div>
         <form action="#">
-            
+            <input class="sign_input" type="text" placeholder="Email">
+            <input class="sign_input" type="text" placeholder="Full Name">
+            <input class="sign_input" type="password" placeholder="Password">
+            <input class="sign_input" type="password" placeholder="Password Confirm">
+            <button class="submit_btn" type="submit">submit</button>
         </form>
+
+        <div class="alert_box">
+            <div class="main_text">Do you have account ?</div>
+            <a class="form_link" href="./sign-in.html">Sign In</a>
+        </div>
     </div>
+
+    <script>
+        let signForm = document.querySelector(".sign_form")
+
+        setInterval(() => {
+            signForm.classList.add("show")
+        }, 500);
+    </script>
 </body>
 </html>

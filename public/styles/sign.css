@@ -1,3 +1,18 @@
+@font-face {
+    font-family: poppinsBold;
+    src: url(./../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppinsRegular;
+    src: url(./../fonts/Poppins-Regular.ttf);
+}
+
+* {
+    font-family: poppinsRegular;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -9,7 +24,80 @@ body {
 
 .sign_form {
     background-color: #333533;
-    width: 400px;
-    height: 600px;
+    width: 300px;
     border-radius: 10px;
+    padding: 50px 70px;
+    position: relative;
+    top: 100px;
+    transition: .8s;
+    opacity: 0;
+}
+.sign_form.show {
+    top: 0;
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_input {
+    width: calc(100% - 40px);
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: 0;
+    margin-bottom: 20px;
+    border: none;
+}
+.sign_input:focus {
+    background-color: #E5E5E5;
+}
+
+.submit_btn {
+    background-color: #F5CB5C;
+    padding: 15px 20px;
+    width: 100%;
+    outline: 0;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #333533;
+}
+.submit_btn:hover {
+    background-color: #242423;
+    color: #fff;
+    border-color: #F5CB5C;
+    background: none;
+    color: #F5CB5C;
+}
+
+.title_box {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #E5E5E5;
+    font-family: poppinsBold;
+}
+
+.alert_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form_link {
+    background-color: #F5CB5C;
+    padding: 5px 10px;
+    color: #000;
+    margin-left: 10px;
+    font-size: 13px;
+    border-radius: 5px;
 }
