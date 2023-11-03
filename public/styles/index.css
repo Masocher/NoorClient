@@ -9,8 +9,9 @@
 }
 
 body {
-    background-color: #242423;
+    background-color: #101010;
     margin: 0;
+    font-family: poppinsRegular;
 }
 
 header {
@@ -19,67 +20,81 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333533;
+}
+
+header .left_section {
+    display: flex;
+    align-items: center;
+}
+
+.header_links {
+    display: flex;
+    margin-left: 80px;
+}
+
+.h_link {
+    margin-right: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
+}
+.h_link:hover {
+    color: #F5CB5C;
+}
+
+header .right_section {
+    display: flex;
+    color: #fff;
+}
+
+.header_icon {
+    font-size: 18px;
+    margin-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.red_badge {
+    background-color: red;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    font-size: 10px;
 }
 
 .logo_box {
     font-family: poppinsBold;
     font-size: 36px;
     color: #fff;
-    letter-spacing: 1px;
-}
-
-.logo_box span {
-    font-family: poppinsRegular;
-    color: #F5CB5C;
-}
-
-.right_word {
-    margin-left: -18px;
-}
-
-.search_form {
+    letter-spacing: 2px;
     display: flex;
-    margin: 0 auto;
 }
-
-.search_input {
-    width: 350px;
-    padding: 15px 20px;
-    border-radius: 5px 0 0 5px;
-    background-color: #fff;
-    outline: 0;
-    border: none;
-}
-.search_input:focus {
-    background-color: #E5E5E5;
-}
-
-.search_btn {
-    padding: 0;
-    background-color: #F5CB5C;
-    color: #000;
-    height: 45px;
-    padding: 0 15px;
-    border-radius: 0 5px 5px 0;
-    border: none;
+.logo_box span {
+    color: #F5CB5C;
+    font-size: 16px;
+    margin: 22px 0 0 5px;
 }
 
 .menu_icon {
     background-color: #F5CB5C;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 18px;
     transition: .2s;
     border: 1px solid #F5CB5C;
 }
 .menu_icon:nth-child(2) {
-    margin: 0 20px;
+    margin: 0 18px;
 }
 .menu_icon:hover {
     background-color: #242423;
@@ -87,5 +102,51 @@ header {
 }
 
 .header_buttons {
+    position: absolute;
+    left: -125px;
+    top: 50px;
+    z-index: 0;
     display: flex;
+    background-color: #181818;
+    padding: 20px 30px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .3s;
+}
+.header_buttons.show {
+    opacity: 1;
+    z-index: 2;
+}
+
+.sign_link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333533;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.sign_up_link {
+    background-color: #F5CB5C;
+    color: #000;
+    margin-left: 10px;
+}
+
+.top_section {
+    position: relative;
+}
+
+.background_image {
+    width: 100%;
+    height: 700px;
+    background-image: url(./../images/gym.webp);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    /* filter: brightness(.3); */
 }
