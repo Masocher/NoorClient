@@ -143,10 +143,31 @@ header .right_section {
 
 .background_image {
     width: 100%;
-    height: 700px;
+    height: 660px;
     background-image: url(./../images/gym.webp);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
-    /* filter: brightness(.3); */
+}
+
+.top_section_filter_boxes {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50px;
+    width: 30%;
+    left: 36%;
+}
+
+.filter_box {
+    background-color: #101010;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #171717;
+    transition: .3s;
+}
+.filter_box.show {
+    background-color: #F5CB5C;
+    color: #000;
 }
