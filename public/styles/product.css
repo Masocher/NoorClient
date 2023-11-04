@@ -27,6 +27,7 @@
     border: 1px solid #101010;
     position: relative;
     bottom: 0;
+    text-decoration: none;
 }
 .product_4_list .product_box:hover {
     border-color: #F5CB5C;
@@ -80,6 +81,7 @@
     font-size: 14px;
     overflow: hidden;
     transition: .3s;
+    color: #000;
 }
 .suggested_star:hover {
     width: 130px;

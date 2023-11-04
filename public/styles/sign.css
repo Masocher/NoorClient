@@ -106,8 +106,8 @@ form {
     position: absolute;
     top: 0px;
     right: 0px;
-    background-color: #F5CB5C;
-    color: #000;
+    background-color: red;
+    color: #fff;
     width: 40px;
     height: 40px;
     display: flex;

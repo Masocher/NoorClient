@@ -160,11 +160,10 @@ header .right_section {
 }
 
 .filter_box {
-    background-color: #101010;
+    background-color: #202020;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
-    border: 1px solid #171717;
     transition: .3s;
 }
 .filter_box.show {
