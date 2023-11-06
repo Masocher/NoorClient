@@ -6,6 +6,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="./public/styles/index.css" />
         <link rel="stylesheet" href="./public/styles/product.css" />
+        <link rel="stylesheet" href="./public/styles/all.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -53,6 +54,8 @@
                     <div class="red_badge">3</div>
                 </div>
             </div>
+
+            <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
         </header>
 
         <div class="top_section">
@@ -386,6 +389,7 @@
         </div>
 
         <script>
+            // header sign buttons
             let u_h_i = document.querySelector(".u_h_i");
             let headerButtons = document.querySelector(".header_buttons");
             let showSignButtons = () => {
@@ -396,6 +400,7 @@
                 }
             };
 
+            // filter box and products lists
             let productLists = document.querySelectorAll(".product_4_list");
             let filterBoxes = document.querySelectorAll(".filter_box");
             let showProductLists = (num) => {

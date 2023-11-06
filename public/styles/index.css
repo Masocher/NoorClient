@@ -28,11 +28,11 @@ body {
 
 .top_section_filter_boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
     top: 50px;
-    width: 30%;
-    left: 36%;
+    left: 35%;
+    width: fit-content;
 }
 
 .filter_box {
@@ -41,8 +41,33 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.3s;
+    margin: 0 10px;
 }
 .filter_box.show {
     background-color: #f5cb5c;
     color: #000;
+}
+
+@media (max-width: 1441px) {
+    .top_section_filter_boxes {
+        top: 50px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .background_image {
+        height: 600px;
+        background-position: right;
+    }
+
+    .top_section_filter_boxes {
+        left: 20%;
+    }
+}
+
+@media (max-width: 769px) {
+    .top_section_filter_boxes {
+        left: 15%;
+    }
 }

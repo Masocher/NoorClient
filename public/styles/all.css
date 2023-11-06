@@ -73,6 +73,7 @@ header .right_section {
     letter-spacing: 2px;
     display: flex;
 }
+
 .logo_box span {
     color: #f5cb5c;
     font-size: 16px;
@@ -84,7 +85,7 @@ header .right_section {
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -133,4 +134,43 @@ header .right_section {
     background-color: #f5cb5c;
     color: #000;
     margin-left: 10px;
+}
+
+@media (max-width: 1025px) {
+    header {
+        width: 90%;
+        padding: 30px 0px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 769px) {
+    header .right_section {
+        display: none;
+    }
+
+    .menu_icon {
+        display: flex;
+    }
+}
+
+@media (max-width: 426px) {
+    .header_links {
+        display: none;
+    }
+
+    .logo_box {
+        font-size: 30px;
+    }
+
+    .logo_box span {
+        font-size: 12px;
+        margin: 20px 0 0 5px;
+    }   
+
+    .menu_icon {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
 }
