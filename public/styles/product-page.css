@@ -216,6 +216,7 @@ body {
     background-color: #151515;
     margin-top: 40px;
     border-left: 1px solid #f5cb5c;
+    position: relative;
 }
 
 .comment_box .user_inf {
@@ -311,6 +312,45 @@ body {
         height: 350px;
         padding: 80px 20px;
     }
+
+    .comment_box .user_profile_img img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .comment_content {
+        font-size: 14px;
+        margin-top: 20px;
+        letter-spacing: 0;
+        line-height: 26px;
+    }
+
+    .comment_date {
+        font-size: 12px;
+    }
+    
+    .comment_date span {
+        font-size: 10px;
+    }
+    
+    .comment_date i {
+        margin: 0 8px 2.5px 0;
+    }
+
+    .comment_box .user_name {
+        font-size: 14px;
+    }
+
+    .user_inf_right_content {
+        margin-left: 15px;
+    }
+
+    .user_inf_right_content .right_section i {
+        margin: 0 5px;
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (max-width: 769px) {
@@ -344,6 +384,11 @@ body {
     .product_discount_price {
         font-size: 18px;
     }
+
+    .comment_box {
+        width: calc(100% - 40px);
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width: 426px) {
@@ -373,6 +418,49 @@ body {
 
     .r_b_2 {
         display: block;
+    }
+
+    .user_inf_right_content .right_section {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+    }
+    
+    .comment_box {
+        width: calc(100% - 40px);
+        padding: 20px 20px 70px 20px;
+    }
+
+    .comments .title_box {
+        font-size: 20px;
+    }
+
+    .comments_top_section {
+        width: calc(100% - 60px);
+        padding: 50px 30px;
+    }
+
+    .send_btn {
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 10px 40px;
+    }
+
+    .send_comment_form input {
+        font-size: 14px;
+        width: calc(100% - 30px);
+    }
+
+    .send_comment_form {
+        flex-direction: column;
+    }
+
+    .user_inf_right_content {
+        margin-top: 20px;
+    }
+
+    .comment_content {
+        margin-top: 0;
     }
 }
 
