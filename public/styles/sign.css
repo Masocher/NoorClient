@@ -116,14 +116,14 @@ form {
     cursor: pointer;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
     .sign_form {
         background: none;
         padding: 0;
     }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 424px) {
     .sign_form {
         width: 250px;
     }

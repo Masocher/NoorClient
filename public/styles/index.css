@@ -28,10 +28,10 @@ body {
 .top_section_filter_boxes {
     display: flex;
     justify-content: center;
+    width: 100%;
     position: absolute;
     top: 50px;
-    left: 35%;
-    width: fit-content;
+    left: 0%;
 }
 
 .filter_box {
@@ -47,26 +47,16 @@ body {
     color: #000;
 }
 
-@media (max-width: 1441px) {
-    .top_section_filter_boxes {
-        top: 50px;
-        left: 30%;
-    }
-}
-
-@media (max-width: 1025px) {
+@media (max-width: 1439px) {
     .background_image {
         height: 600px;
         background-position: right;
     }
-
-    .top_section_filter_boxes {
-        left: 20%;
-    }
 }
 
-@media (max-width: 769px) {
-    .top_section_filter_boxes {
-        left: 15%;
+@media (max-width: 1023px) {
+    .filter_box {
+        font-size: 12px;
+        margin: 0 5px;
     }
 }
