@@ -10,6 +10,7 @@
 
 body {
     font-family: poppinsRegular;
+    background-color: #0c0c0c;
 }
 
 /* header */
@@ -107,7 +108,7 @@ header .right_section {
     top: 50px;
     z-index: 0;
     display: flex;
-    background-color: #181818;
+    background-color: #101010;
     padding: 20px 30px;
     border-radius: 10px;
     opacity: 0;
@@ -180,7 +181,6 @@ header .right_section {
 footer {
     width: calc(100% - 200px);
     padding: 100px;
-    background-color: #0c0c0c;
     margin-top: 150px;
     display: flex;
     justify-content: center;

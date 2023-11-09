@@ -9,7 +9,6 @@
 }
 
 body {
-    background-color: #101010;
     margin: 0;
 }
 
@@ -36,7 +35,7 @@ body {
 }
 
 .filter_box {
-    background-color: #202020;
+    background-color: #151515;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;

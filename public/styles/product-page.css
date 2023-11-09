@@ -6,7 +6,6 @@
 
 body {
     margin: 0;
-    background-color: #101010;
 }
 
 .product_box {
@@ -29,7 +28,7 @@ body {
 .slider {
     width: 400px;
     height: 400px;
-    background-color: #181818;
+    background-color: #0f0f0f;
     padding: 100px 30px;
 }
 
@@ -89,7 +88,7 @@ body {
     letter-spacing: .5px;
     line-height: 30px;
     margin-top: 50px;
-    border: solid #181818;
+    border: solid #0f0f0f;
     border-width: 1px 0 1px 0;
     padding: 50px 0;
 }
@@ -129,7 +128,7 @@ body {
 
 .rating_box {
     width: 100%;
-    background-color: #181818;
+    background-color: #0f0f0f;
     margin: 50px auto 0 auto;
     text-align: center;
     padding: 35px 0;
@@ -168,7 +167,7 @@ body {
     background-color: #fff;
 }
 .send_btn {
-    padding: 14px 40px;
+    padding: 15px 40px;
     border: none;
 }
 
@@ -191,7 +190,7 @@ body {
 }
 
 .send_comment_form input {
-    background-color: #101010;
+    background-color: #0c0c0c;
     color: #fff;
     padding: 20px 20px;
     width: 100%;
@@ -200,7 +199,7 @@ body {
     font-size: 16px;
 }
 .send_comment_form input:focus {
-    background-color: #181818;
+    background-color: #121212;
 }
 
 .comments_lsit {
@@ -213,7 +212,7 @@ body {
 .comment_box {
     width: calc(100% - 100px);
     padding: 30px 50px;
-    background-color: #151515;
+    background-color: #0f0f0f;
     margin-top: 40px;
     border-left: 1px solid #f5cb5c;
     position: relative;
@@ -249,7 +248,7 @@ body {
 .user_inf_right_content .right_section i {
     margin: 0 8px;
     font-size: 18px;
-    background-color: #202020;
+    background-color: #151515;
     width: 40px;
     height: 40px;
     display: flex;
@@ -292,7 +291,7 @@ body {
 .comments_top_section {
     display: flex;
     flex-direction: column;
-    background-color: #151515;
+    background-color: #0f0f0f;
     width: calc(100% - 100px);
     padding: 50px;
 }
