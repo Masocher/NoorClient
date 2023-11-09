@@ -248,3 +248,96 @@ footer .title_box {
     background-color: #f5cb5c;
     color: #000;
 }
+
+@media (max-width: 1441px) {
+    footer .left_section {
+        width: 40%;
+    }
+    
+    footer .right_section {
+        width: 60%;
+    }   
+}
+
+@media (max-width: 1025px) {
+    footer .left_section {
+        width: 50%;
+    }
+    
+    footer .right_section {
+        width: 50%;
+    }
+
+    footer {
+        width: calc(100% - 100px);
+        padding: 100px 50px;
+    }
+
+    .footer_description {
+        letter-spacing: 0;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    .footer_inf_box {
+        letter-spacing: 0;
+        font-size: 14px;
+    }
+    
+    .footer_inf_box i {
+        font-size: 20px;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        width: calc(100% - 70px);
+        padding: 100px 35px;
+    }
+}
+
+@media (max-width: 426px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .left_section {
+        width: 100%;
+    }
+    
+    footer .right_section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px) {
+    footer {
+        width: calc(100% - 50px);
+        padding: 100px 25px;
+    }
+
+    footer .title_box {
+        font-size: 24px;
+        font-family: poppinsBold;
+        color: #f5cb5c;
+    }
+    
+    .footer_description {
+        line-height: 20px;
+        margin: 20px 0;
+        font-size: 12px;
+    }   
+
+    .social_media_pages i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .footer_inf_box {
+        font-size: 12px;
+    }
+}
