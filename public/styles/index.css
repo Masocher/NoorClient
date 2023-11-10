@@ -47,6 +47,41 @@ body {
     color: #000;
 }
 
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.category_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.category_box img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #0f0f0f;
+    cursor: pointer;
+}
+.category_box img:hover {
+    background-color: #f5cb5c;
+}
+
+.category_box .title_box {
+    font-size: 18px;
+    color: #fff;
+    font-family: poppinsBold;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
 @media (max-width: 1439px) {
     .background_image {
         height: 600px;
