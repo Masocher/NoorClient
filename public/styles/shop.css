@@ -34,3 +34,148 @@
     height: 200px;
     object-fit: contain;
 }
+
+@media (max-width: 1441px) {
+    .shop_countiner {
+        width: calc(100% - 100px);
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .shop_countiner {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .shop_countiner {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .product_box {
+        width: 130px;
+        padding: 40px;
+    }
+
+    .product_box img {
+        height: 130px;
+    }
+
+    .product_title {
+        font-size: 18px !important;
+    }
+
+    .product_brand {
+        font-size: 12px !important;
+    }
+
+    .product_price {
+        font-size: 24px !important;
+    }
+    
+    .product_price i {
+        font-size: 22px !important;
+    }
+
+    .product_score_box i {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .product_box {
+        width: 110px;
+        padding: 35px;
+    }
+
+    .product_box img {
+        height: 110px;
+    }
+
+    .product_title {
+        font-size: 16px !important;
+    }
+
+    .product_brand {
+        font-size: 10px !important;
+    }
+
+    .product_price {
+        font-size: 20px !important;
+    }
+    
+    .product_price i {
+        font-size: 18px !important;
+    }
+
+    .product_score_box i {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 424px) {
+    .product_box {
+        width: 95px;
+        padding: 20px 30px;
+    }
+
+    .product_box img {
+        height: 95px;
+    }
+
+    .product_title {
+        font-size: 14px !important;
+    }
+
+    .product_brand {
+        font-size: 8px !important;
+    }
+
+    .product_price {
+        font-size: 18px !important;
+    }
+    
+    .product_price i {
+        font-size: 16px !important;
+    }
+
+    .product_score_box i {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 374px) {
+    .product_box {
+        width: 85px;
+        padding: 20px 25px;
+        margin: 10px 5px 0 5px;
+    }
+
+    .product_box img {
+        height: 85px;
+    }
+
+    .product_title {
+        font-size: 12px !important;
+    }
+
+    .product_brand {
+        font-size: 8px !important;
+    }
+
+    .product_price {
+        font-size: 18px !important;
+    }
+    
+    .product_price i {
+        font-size: 16px !important;
+    }
+
+    .product_score_box i {
+        font-size: 12px !important;
+    }
+}
