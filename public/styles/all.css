@@ -342,3 +342,41 @@ footer .title_box {
         font-size: 12px;
     }
 }
+
+/* categories section */
+
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.category_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.category_box img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #0f0f0f;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.category_box img:hover {
+    background-color: #f5cb5c;
+}
+.category_box.show img {
+    background-color: #f5cb5c;
+}
+
+.category_box .title_box {
+    color: #fff;
+    margin-top: 15px;
+}
