@@ -1,4 +1,4 @@
-.contact_section {
+ .contact_section {
     width: 65%;
     margin: 150px auto 0 auto;
     display: flex;
@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 70px;
 }
 
 .c_inf_box i {
@@ -71,6 +70,7 @@ textarea {
     margin-top: 30px;
     min-height: 200px;
     font-size: 16px;
+    resize: vertical;
 }
 
 .little_title {
@@ -96,4 +96,73 @@ textarea {
 .send_btn:hover {
     background: none;
     color: #f5cb5c;
+}
+
+@media (max-width: 1439px) {
+    .contact_section {
+        width: 80%;
+    }
+
+    .c_inf_box {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    .contact_section {
+        width: 95%;
+        margin-top: 100px;
+    }
+
+    .c_inf_box {
+        font-size: 14px;
+    }
+    
+    .c_inf_box i {
+        color: #f5cb5c;
+        font-size: 30px;
+    }
+    
+    .c_inf_box .main_title {
+        margin: 15px 0 10px 0;
+        letter-spacing: 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact_section {
+        margin-top: 0px;
+    }
+
+    .c_inf_box {
+        width: 50%;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .company_inf {
+        flex-wrap: wrap;
+    }
+
+    .row_1 {
+        flex-wrap: wrap;
+    }
+    
+    .row_1 input {
+        width: calc(100% - 40px);
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 424px) {
+    .c_inf_box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title_box {
+        font-size: 30px;
+    }
 }
