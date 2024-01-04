@@ -108,7 +108,7 @@ header .right_section {
     top: 50px;
     z-index: 0;
     display: flex;
-    background-color: #101010;
+    background-color: #151515;
     padding: 20px 30px;
     border-radius: 10px;
     opacity: 0;
@@ -154,9 +154,7 @@ header .right_section {
     .menu_icon {
         display: flex;
     }
-}
 
-@media (max-width: 767px) {
     .header_links {
         display: none;
     }
@@ -171,8 +169,8 @@ header .right_section {
     }   
 
     .menu_icon {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -365,7 +363,7 @@ footer .title_box {
     object-fit: contain;
     padding: 10px;
     border-radius: 50%;
-    background-color: #0f0f0f;
+    background-color: #151515;
     cursor: pointer;
     transition: .2s ease-out;
 }
@@ -425,5 +423,78 @@ footer .title_box {
 
     .categories {
         flex-wrap: wrap;
+    }
+}
+
+/* menu section */
+
+.menu_box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -800px;
+    background-color: #151515;
+    z-index: 2;
+    transition: .3s ease-in-out;
+    padding-top: 130px;
+}
+.menu_box.show {
+    right: 0;
+}
+
+.close_icon {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-color: #f5cb5c;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_right_box {
+    display: flex;
+    justify-content: center;
+}
+
+.m_link {
+    width: 80%;
+    background-color: #202020;
+    text-align: center;
+    padding: 15px 0;
+    margin: 3px 0;
+}
+.m_link:hover {
+    background-color: #f5cb5c;
+    color: #000;
+}
+
+.m_b_i {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+    .close_icon {
+        right: 25px;
+        width: 35px;
+        height: 35px;
     }
 }
