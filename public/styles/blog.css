@@ -97,6 +97,7 @@
     cursor: pointer;
     font-size: 14px;
 }
+
 .more_btn:hover {
     background: none;
     color: #f5cb5c;
@@ -108,7 +109,8 @@
     margin-top: 70px
 }
 
-.recent_news .main_title, .tags_box .main_title {
+.recent_news .main_title,
+.tags_box .main_title {
     font-size: 28px;
     font-family: poppinsBold;
     padding-bottom: 10px;
@@ -128,7 +130,7 @@
     object-fit: cover;
 }
 
-.r_article_box .article_info{
+.r_article_box .article_info {
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -139,6 +141,7 @@
     cursor: pointer;
     transition: .2s;
 }
+
 .r_article_box .title_box:hover {
     color: #f5cb5c;
 }
@@ -163,6 +166,7 @@
     cursor: pointer;
     color: #fff;
 }
+
 .tag_box:hover {
     background-color: #f5cb5c;
     color: #000;
@@ -184,10 +188,12 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
 .page_num:hover {
     background-color: #f5cb5c;
     color: #000;
 }
+
 .page_num.show {
     background-color: #f5cb5c;
     color: #000;
@@ -213,13 +219,13 @@
 @media (max-width: 1441px) {
     .blog_section {
         width: 80%;
-    }   
+    }
 }
 
 @media (max-width: 1439px) {
     .blog_section {
         width: 95%;
-    }   
+    }
 
     .article_box img {
         width: 230px;
@@ -230,7 +236,7 @@
         margin: 10px 0 0 30px;
         font-size: 14px;
     }
-    
+
     .article_box .title_box {
         font-size: 18px;
     }
@@ -244,7 +250,7 @@
     .articles {
         width: 60%;
     }
-    
+
     .right_section {
         width: 35%;
     }
@@ -254,7 +260,7 @@
     .articles {
         width: 100%;
     }
-    
+
     .right_section {
         width: 70%;
         margin-top: 100px;
@@ -306,7 +312,7 @@
         letter-spacing: 0;
         font-size: 14px;
     }
- 
+
     .news_box {
         width: calc(100% - 60px);
         padding: 50px 30px;

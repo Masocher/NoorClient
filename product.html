@@ -1,366 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mass Gainer</title>
-        <link rel="stylesheet" href="./public/styles/product-page.css" />
-        <link rel="stylesheet" href="./public/styles/all.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-    </head>
-    <body>
-        <header>
-            <div class="left_section">
-                <div class="logo_box">NOOR <span>GYM</span></div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mass Gainer</title>
+    <link rel="stylesheet" href="./public/styles/product-page.css" />
+    <link rel="stylesheet" href="./public/styles/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-                <div class="header_links">
-                    <a class="h_link" href="./index.html">Home</a>
-                    <a class="h_link" href="./shop.html">Shop</a>
-                    <a class="h_link" href="./blog.html">Blog</a>
-                    <a class="h_link" href="./contact.html">Contact</a>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="left_section">
+            <div class="logo_box">NOOR <span>GYM</span></div>
+
+            <div class="header_links">
+                <a class="h_link" href="./index.html">Home</a>
+                <a class="h_link" href="./shop.html">Shop</a>
+                <a class="h_link" href="./blog.html">Blog</a>
+                <a class="h_link" href="./contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="right_section">
+            <div class="header_icon u_h_i" onclick="showSignButtons()">
+                <i class="fa-solid fa-user"></i>
+
+                <div class="header_buttons">
+                    <a class="sign_link" href="./sign-in.html">Sign In</a>
+                    <a class="sign_link sign_up_link" href="./sign-up.html">Sign Up</a>
                 </div>
             </div>
 
-            <div class="right_section">
-                <div class="header_icon u_h_i" onclick="showSignButtons()">
-                    <i class="fa-solid fa-user"></i>
-
-                    <div class="header_buttons">
-                        <a class="sign_link" href="./sign-in.html">Sign In</a>
-                        <a class="sign_link sign_up_link" href="./sign-up.html"
-                            >Sign Up</a
-                        >
-                    </div>
-                </div>
-
-                <div class="header_icon">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="red_badge">2</div>
-                </div>
-
-                <div class="header_icon">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <div class="red_badge">3</div>
-                </div>
+            <div class="header_icon">
+                <i class="fa-solid fa-heart"></i>
+                <div class="red_badge">2</div>
             </div>
 
-            <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
-        </header>
-
-        <div class="product_box">
-            <div class="left_section">
-                <swiper-container
-                    class="slider"
-                    loop="true"
-                    autoplay-delay="3000"
-                    space-between="0"
-                >
-                    <swiper-slide class="slide">
-                        <img
-                            src="./public/images/products/1.png"
-                            alt="product-image"
-                            class="product_image"
-                        />
-                    </swiper-slide>
-
-                    <swiper-slide class="slide">
-                        <img
-                            src="./public/images/products/1-3.png"
-                            alt="product-image"
-                            class="product_image"
-                        />
-                    </swiper-slide>
-
-                    <swiper-slide class="slide">
-                        <img
-                            src="./public/images/products/1-2.png"
-                            alt="product-image"
-                            class="product_image"
-                        />
-                    </swiper-slide>
-                </swiper-container>
-
-                <div class="rating_box">
-                    <div class="rating_stars">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <div class="title_box">
-                        Rate this product
-                    </div>
-
-                    <div class="submit_btn">Submit</div>
-                </div>
+            <div class="header_icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="red_badge">3</div>
             </div>
+        </div>
 
-            <div class="right_section">
-                <div class="product_title">Mass Gainer</div>
+        <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
+    </header>
 
-                <div class="product_brand">OPTIMUM NUTRITION</div>
+    <div class="product_box">
+        <div class="left_section">
+            <swiper-container class="slider" loop="true" autoplay-delay="3000" space-between="0">
+                <swiper-slide class="slide">
+                    <img src="./public/images/products/1.png" alt="product-image" class="product_image" />
+                </swiper-slide>
 
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 18,50
-                </div>
+                <swiper-slide class="slide">
+                    <img src="./public/images/products/1-3.png" alt="product-image" class="product_image" />
+                </swiper-slide>
 
-                <div class="product_discount_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
+                <swiper-slide class="slide">
+                    <img src="./public/images/products/1-2.png" alt="product-image" class="product_image" />
+                </swiper-slide>
+            </swiper-container>
 
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+            <div class="rating_box">
+                <div class="rating_stars">
                     <i class="fa-regular fa-star"></i>
-                    <span>(426)</span>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
                 </div>
 
-                <div class="add_buttons">
-                    <div class="add_btn">
-                        <i class="fa-solid fa-bag-shopping"></i> Add To Cart
-                    </div>
-                    <div class="add_btn red_btn">
-                        <i class="fa-solid fa-heart"></i> Add To Wishlist
-                    </div>
+                <div class="title_box">
+                    Rate this product
                 </div>
 
-                <div class="description">
-                    <div class="title_box">Product Details</div>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged.
+                <div class="submit_btn">Submit</div>
+            </div>
+        </div>
+
+        <div class="right_section">
+            <div class="product_title">Mass Gainer</div>
+
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 18,50
+            </div>
+
+            <div class="product_discount_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>(426)</span>
+            </div>
+
+            <div class="add_buttons">
+                <div class="add_btn">
+                    <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+                </div>
+                <div class="add_btn red_btn">
+                    <i class="fa-solid fa-heart"></i> Add To Wishlist
+                </div>
+            </div>
+
+            <div class="description">
+                <div class="title_box">Product Details</div>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a
+                type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining
+                essentially unchanged. Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book. It has survived not only
+                five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+            </div>
+
+            <div class="rating_box r_b_2">
+                <div class="rating_stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
                 </div>
 
-                <div class="rating_box r_b_2">
-                    <div class="rating_stars">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <div class="title_box">
-                        Rate this product
-                    </div>
-
-                    <div class="submit_btn">Submit</div>
+                <div class="title_box">
+                    Rate this product
                 </div>
 
-                <div class="comments">
-                    <div class="comments_top_section">
-                        <div class="title_box">Write Your Comment</div>
+                <div class="submit_btn">Submit</div>
+            </div>
 
-                        <form class="send_comment_form" action="#">
-                            <input
-                                type="text"
-                                placeholder="Write your opinion ..."
-                            />
-                            <div class="send_btn">Send</div>
-                        </form>
-                    </div>
+            <div class="comments">
+                <div class="comments_top_section">
+                    <div class="title_box">Write Your Comment</div>
 
-                    <div class="comments_lsit">
-                        <div class="comment_box">
-                            <div class="user_inf">
-                                <div class="user_profile_img">
-                                    <img
-                                        src="./public/images/user-image-1.jpg"
-                                        alt="user-image"
-                                    />
-                                </div>
+                    <form class="send_comment_form" action="#">
+                        <input type="text" placeholder="Write your opinion ..." />
+                        <div class="send_btn">Send</div>
+                    </form>
+                </div>
 
-                                <div class="user_inf_right_content">
-                                    <div class="left_section">
-                                        <div class="user_name">
-                                            Abdolrahman Kiany
-                                        </div>
-                                        <div class="comment_date">
-                                            <i
-                                                class="fa-solid fa-calendar-days"
-                                            ></i>
-                                            29<span>/</span>11<span>/</span>2023
-                                        </div>
-                                    </div>
-
-                                    <div class="right_section">
-                                        <i class="fa-solid fa-thumbs-up"></i>
-                                        <i class="fa-solid fa-thumbs-down"></i>
-                                    </div>
-                                </div>
+                <div class="comments_lsit">
+                    <div class="comment_box">
+                        <div class="user_inf">
+                            <div class="user_profile_img">
+                                <img src="./public/images/user-image-1.jpg" alt="user-image" />
                             </div>
 
-                            <div class="comment_content">
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                            <div class="user_inf_right_content">
+                                <div class="left_section">
+                                    <div class="user_name">
+                                        Abdolrahman Kiany
+                                    </div>
+                                    <div class="comment_date">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        29<span>/</span>11<span>/</span>2023
+                                    </div>
+                                </div>
+
+                                <div class="right_section">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-thumbs-down"></i>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="comment_box">
-                            <div class="user_inf">
-                                <div class="user_profile_img">
-                                    <img
-                                        src="./public/images/user-image-2.jpg"
-                                        alt="user-image"
-                                    />
-                                </div>
+                        <div class="comment_content">
+                            Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since
+                            the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen
+                            book.
+                        </div>
+                    </div>
 
-                                <div class="user_inf_right_content">
-                                    <div class="left_section">
-                                        <div class="user_name">
-                                            Noorahmad Jorjani
-                                        </div>
-                                        <div class="comment_date">
-                                            <i
-                                                class="fa-solid fa-calendar-days"
-                                            ></i>
-                                            29<span>/</span>11<span>/</span>2023
-                                        </div>
-                                    </div>
-
-                                    <div class="right_section">
-                                        <i class="fa-solid fa-thumbs-up"></i>
-                                        <i class="fa-solid fa-thumbs-down"></i>
-                                    </div>
-                                </div>
+                    <div class="comment_box">
+                        <div class="user_inf">
+                            <div class="user_profile_img">
+                                <img src="./public/images/user-image-2.jpg" alt="user-image" />
                             </div>
 
-                            <div class="comment_content">
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                            <div class="user_inf_right_content">
+                                <div class="left_section">
+                                    <div class="user_name">
+                                        Noorahmad Jorjani
+                                    </div>
+                                    <div class="comment_date">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        29<span>/</span>11<span>/</span>2023
+                                    </div>
+                                </div>
+
+                                <div class="right_section">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-thumbs-down"></i>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="comment_box">
-                            <div class="user_inf">
-                                <div class="user_profile_img">
-                                    <img
-                                        src="./public/images/user-image-3.jpg"
-                                        alt="user-image"
-                                    />
-                                </div>
+                        <div class="comment_content">
+                            Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since
+                            the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen
+                            book.
+                        </div>
+                    </div>
 
-                                <div class="user_inf_right_content">
-                                    <div class="left_section">
-                                        <div class="user_name">
-                                            Masocher The Great
-                                        </div>
-                                        <div class="comment_date">
-                                            <i
-                                                class="fa-solid fa-calendar-days"
-                                            ></i>
-                                            29<span>/</span>11<span>/</span>2023
-                                        </div>
-                                    </div>
-
-                                    <div class="right_section">
-                                        <i class="fa-solid fa-thumbs-up"></i>
-                                        <i class="fa-solid fa-thumbs-down"></i>
-                                    </div>
-                                </div>
+                    <div class="comment_box">
+                        <div class="user_inf">
+                            <div class="user_profile_img">
+                                <img src="./public/images/user-image-3.jpg" alt="user-image" />
                             </div>
 
-                            <div class="comment_content">
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen
-                                book.
+                            <div class="user_inf_right_content">
+                                <div class="left_section">
+                                    <div class="user_name">
+                                        Masocher The Great
+                                    </div>
+                                    <div class="comment_date">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        29<span>/</span>11<span>/</span>2023
+                                    </div>
+                                </div>
+
+                                <div class="right_section">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-thumbs-down"></i>
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="comment_content">
+                            Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since
+                            the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen
+                            book.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer>
-            <div class="left_section">
-                <div class="footer_inf_box">
-                    <i class="fa-solid fa-location-dot"></i>
-                    21 Revolution Street - Paris, France
-                </div>
-
-                <div class="footer_inf_box">
-                    <i class="fa-solid fa-phone"></i>
-                    +1 555 123456
-                </div>
-
-                <div class="footer_inf_box">
-                    <i class="fa-solid fa-envelope"></i>
-                    Masocherr@gmail.com
-                </div>
+    <footer>
+        <div class="left_section">
+            <div class="footer_inf_box">
+                <i class="fa-solid fa-location-dot"></i>
+                21 Revolution Street - Paris, France
             </div>
 
-            <div class="right_section">
-                <div class="title_box">About the company</div>
-
-                <div class="footer_description">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                </div>
-
-                <div class="social_media_pages">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-github"></i>
-                </div>
+            <div class="footer_inf_box">
+                <i class="fa-solid fa-phone"></i>
+                +1 555 123456
             </div>
-        </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-        <script>
-            // header sign buttons
-            let u_h_i = document.querySelector(".u_h_i");
-            let headerButtons = document.querySelector(".header_buttons");
-            let showSignButtons = () => {
-                if (headerButtons.classList.contains("show")) {
-                    headerButtons.classList.remove("show");
-                } else {
-                    headerButtons.classList.add("show");
-                }
-            };
-        </script>
-    </body>
+            <div class="footer_inf_box">
+                <i class="fa-solid fa-envelope"></i>
+                Masocherr@gmail.com
+            </div>
+        </div>
+
+        <div class="right_section">
+            <div class="title_box">About the company</div>
+
+            <div class="footer_description">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a
+                type specimen book. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a
+                type specimen book.
+            </div>
+
+            <div class="social_media_pages">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        // header sign buttons
+        let u_h_i = document.querySelector(".u_h_i");
+        let headerButtons = document.querySelector(".header_buttons");
+        let showSignButtons = () => {
+            if (headerButtons.classList.contains("show")) {
+                headerButtons.classList.remove("show");
+            } else {
+                headerButtons.classList.add("show");
+            }
+        };
+    </script>
+</body>
+
 </html>

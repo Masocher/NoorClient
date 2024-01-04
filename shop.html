@@ -1,736 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Shop</title>
-        <link rel="stylesheet" href="./public/styles/all.css" />
-        <link rel="stylesheet" href="./public/styles/shop.css" />
-        <link rel="stylesheet" href="./public/styles/product.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-    </head>
-    <body>
-        <header>
-            <div class="left_section">
-                <div class="logo_box">NOOR <span>GYM</span></div>
 
-                <div class="header_links">
-                    <a class="h_link" href="./index.html">Home</a>
-                    <a class="h_link" href="./shop.html">Shop</a>
-                    <a class="h_link" href="./blog.html">Blog</a>
-                    <a class="h_link" href="./contact.html">Contact</a>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./public/styles/all.css" />
+    <link rel="stylesheet" href="./public/styles/shop.css" />
+    <link rel="stylesheet" href="./public/styles/product.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-            <div class="right_section">
-                <div class="header_icon u_h_i" onclick="showSignButtons()">
-                    <i class="fa-solid fa-user"></i>
+<body>
+    <header>
+        <div class="left_section">
+            <div class="logo_box">NOOR <span>GYM</span></div>
 
-                    <div class="header_buttons">
-                        <a class="sign_link" href="./sign-in.html">Sign In</a>
-                        <a class="sign_link sign_up_link" href="./sign-up.html"
-                            >Sign Up</a
-                        >
-                    </div>
-                </div>
-
-                <div class="header_icon">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="red_badge">2</div>
-                </div>
-
-                <div class="header_icon">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <div class="red_badge">3</div>
-                </div>
-            </div>
-
-            <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
-        </header>
-
-        <div class="categories">
-            <div class="category_box" onclick="selectCategory(0)">
-                <img
-                    src="./public/images/categories/amino.png"
-                    alt="category-image"
-                />
-
-                <div class="title_box">AMINO</div>
-            </div>
-            <div class="category_box" onclick="selectCategory(1)">
-                <img
-                    src="./public/images/categories/mass-gainer.png"
-                    alt="category-image"
-                />
-                <div class="title_box">MASS GAINER</div>
-            </div>
-            <div class="category_box" onclick="selectCategory(2)">
-                <img
-                    src="./public/images/categories/protein-whey.png"
-                    alt="category-image"
-                />
-                <div class="title_box">PROTEIN WHEY</div>
-            </div>
-            <div class="category_box" onclick="selectCategory(3)">
-                <img
-                    src="./public/images/categories/creatine.png"
-                    alt="category-image"
-                />
-                <div class="title_box">CREATINE</div>
-            </div>
-            <div class="category_box" onclick="selectCategory(4)">
-                <img
-                    src="./public/images/categories/bcaa.png"
-                    alt="category-image"
-                />
-                <div class="title_box">BCAA</div>
+            <div class="header_links">
+                <a class="h_link" href="./index.html">Home</a>
+                <a class="h_link" href="./shop.html">Shop</a>
+                <a class="h_link" href="./blog.html">Blog</a>
+                <a class="h_link" href="./contact.html">Contact</a>
             </div>
         </div>
 
-        <div class="shop_countiner all_products show">
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 18,50
-                </div>
-                <div class="product_discount_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
+        <div class="right_section">
+            <div class="header_icon u_h_i" onclick="showSignButtons()">
+                <i class="fa-solid fa-user"></i>
 
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/products/1.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-        </div>
-
-        <div class="shop_countiner amino">
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/amino.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/amino.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/amino.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/amino.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/amino.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-        </div>
-
-        <div class="shop_countiner gainer">
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/mass-gainer.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/mass-gainer.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/mass-gainer.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/mass-gainer.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/mass-gainer.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-        </div>
-
-        <div class="shop_countiner whey">
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/protein-whey.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/protein-whey.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/protein-whey.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/protein-whey.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/protein-whey.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-        </div>
-
-        <div class="shop_countiner creatine">
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/creatine.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/creatine.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/creatine.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/creatine.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/creatine.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-        </div>
-
-        <div class="shop_countiner bcaa">
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/bcaa.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/bcaa.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/bcaa.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/bcaa.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-
-            <a class="product_box" href="./product.html">
-                <img src="./public/images/categories/bcaa.png" alt="product" />
-                <div class="product_title">Mass Gainer</div>
-                <div class="product_brand">OPTIMUM NUTRITION</div>
-                <div class="product_price">
-                    <i class="fa-solid fa-dollar"></i> 22,50
-                </div>
-                <div class="product_score_box">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </a>
-        </div>
-
-        <footer>
-            <div class="left_section">
-                <div class="footer_inf_box">
-                    <i class="fa-solid fa-location-dot"></i>
-                    21 Revolution Street - Paris, France
-                </div>
-
-                <div class="footer_inf_box">
-                    <i class="fa-solid fa-phone"></i>
-                    +1 555 123456
-                </div>
-
-                <div class="footer_inf_box">
-                    <i class="fa-solid fa-envelope"></i>
-                    Masocherr@gmail.com
+                <div class="header_buttons">
+                    <a class="sign_link" href="./sign-in.html">Sign In</a>
+                    <a class="sign_link sign_up_link" href="./sign-up.html">Sign Up</a>
                 </div>
             </div>
 
-            <div class="right_section">
-                <div class="title_box">About the company</div>
-
-                <div class="footer_description">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to
-                    make a type specimen book.
-                </div>
-
-                <div class="social_media_pages">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-github"></i>
-                </div>
+            <div class="header_icon">
+                <i class="fa-solid fa-heart"></i>
+                <div class="red_badge">2</div>
             </div>
-        </footer>
 
-        <script>
-            // header sign buttons
-            let u_h_i = document.querySelector(".u_h_i");
-            let headerButtons = document.querySelector(".header_buttons");
-            let showSignButtons = () => {
-                if (headerButtons.classList.contains("show")) {
-                    headerButtons.classList.remove("show");
-                } else {
-                    headerButtons.classList.add("show");
-                }
-            };
+            <div class="header_icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="red_badge">3</div>
+            </div>
+        </div>
 
-            // category boxes
-            let categories = document.querySelectorAll(".category_box");
-            let shopCountiner = document.querySelectorAll(".shop_countiner")
-            let selectCategory = (num) => {
-                categories.forEach((cg) => cg.classList.remove("show"));
-                categories[num].classList.add("show");
-                shopCountiner.forEach(sc => sc.classList.remove("show"))
-                shopCountiner[num + 1].classList.add("show")
-            };
-        </script>
-    </body>
+        <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <div class="categories">
+        <div class="category_box" onclick="selectCategory(0)">
+            <img src="./public/images/categories/amino.png" alt="category-image" />
+
+            <div class="title_box">AMINO</div>
+        </div>
+        <div class="category_box" onclick="selectCategory(1)">
+            <img src="./public/images/categories/mass-gainer.png" alt="category-image" />
+            <div class="title_box">MASS GAINER</div>
+        </div>
+        <div class="category_box" onclick="selectCategory(2)">
+            <img src="./public/images/categories/protein-whey.png" alt="category-image" />
+            <div class="title_box">PROTEIN WHEY</div>
+        </div>
+        <div class="category_box" onclick="selectCategory(3)">
+            <img src="./public/images/categories/creatine.png" alt="category-image" />
+            <div class="title_box">CREATINE</div>
+        </div>
+        <div class="category_box" onclick="selectCategory(4)">
+            <img src="./public/images/categories/bcaa.png" alt="category-image" />
+            <div class="title_box">BCAA</div>
+        </div>
+    </div>
+
+    <div class="shop_countiner all_products show">
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 18,50
+            </div>
+            <div class="product_discount_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/products/1.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="shop_countiner amino">
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/amino.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/amino.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/amino.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/amino.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/amino.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="shop_countiner gainer">
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/mass-gainer.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/mass-gainer.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/mass-gainer.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/mass-gainer.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/mass-gainer.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="shop_countiner whey">
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/protein-whey.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/protein-whey.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/protein-whey.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/protein-whey.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/protein-whey.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="shop_countiner creatine">
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/creatine.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/creatine.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/creatine.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/creatine.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/creatine.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="shop_countiner bcaa">
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/bcaa.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/bcaa.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/bcaa.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/bcaa.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+
+        <a class="product_box" href="./product.html">
+            <img src="./public/images/categories/bcaa.png" alt="product" />
+            <div class="product_title">Mass Gainer</div>
+            <div class="product_brand">OPTIMUM NUTRITION</div>
+            <div class="product_price">
+                <i class="fa-solid fa-dollar"></i> 22,50
+            </div>
+            <div class="product_score_box">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="left_section">
+            <div class="footer_inf_box">
+                <i class="fa-solid fa-location-dot"></i>
+                21 Revolution Street - Paris, France
+            </div>
+
+            <div class="footer_inf_box">
+                <i class="fa-solid fa-phone"></i>
+                +1 555 123456
+            </div>
+
+            <div class="footer_inf_box">
+                <i class="fa-solid fa-envelope"></i>
+                Masocherr@gmail.com
+            </div>
+        </div>
+
+        <div class="right_section">
+            <div class="title_box">About the company</div>
+
+            <div class="footer_description">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a
+                type specimen book. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to
+                make a type specimen book.
+            </div>
+
+            <div class="social_media_pages">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // header sign buttons
+        let u_h_i = document.querySelector(".u_h_i");
+        let headerButtons = document.querySelector(".header_buttons");
+        let showSignButtons = () => {
+            if (headerButtons.classList.contains("show")) {
+                headerButtons.classList.remove("show");
+            } else {
+                headerButtons.classList.add("show");
+            }
+        };
+
+        // category boxes
+        let categories = document.querySelectorAll(".category_box");
+        let shopCountiner = document.querySelectorAll(".shop_countiner")
+        let selectCategory = (num) => {
+            categories.forEach((cg) => cg.classList.remove("show"));
+            categories[num].classList.add("show");
+            shopCountiner.forEach(sc => sc.classList.remove("show"))
+            shopCountiner[num + 1].classList.add("show")
+        };
+    </script>
+</body>
+
 </html>
