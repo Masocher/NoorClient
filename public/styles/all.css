@@ -194,7 +194,8 @@ footer .left_section {
 }
 
 footer .right_section {
-    width: 70%;
+    width: calc(70% - 50px);
+    margin-left: 50px;
 }
 
 .footer_inf_box {
@@ -259,6 +260,7 @@ footer .title_box {
 
     footer .right_section {
         width: 60%;
+        margin: 0;
     }
 }
 

@@ -48,6 +48,26 @@ body {
     color: #000;
 }
 
+.swiper {
+    width: calc(100% - 250px);
+    margin: 50px 0;
+}
+
+.swiper-slide {
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    text-decoration: none;
+}
+
+.swiper-slide img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
 @media (max-width: 1439px) {
     .background_image {
         height: 600px;

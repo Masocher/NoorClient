@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -432,6 +434,92 @@
         </div>
     </div>
 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <a class="swiper-slide product_box" href="./product.html">
+                <img src="./public/images/products/1.png" alt="product" />
+                <div class="product_title">Mass Gainer</div>
+                <div class="product_brand">OPTIMUM NUTRITION</div>
+                <div class="product_price">
+                    <i class="fa-solid fa-dollar"></i> 22,50
+                </div>
+                <div class="product_score_box">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </a>
+
+            <a class="swiper-slide product_box" href="./product.html">
+                <img src="./public/images/products/1.png" alt="product" />
+                <div class="product_title">Mass Gainer</div>
+                <div class="product_brand">OPTIMUM NUTRITION</div>
+                <div class="product_price">
+                    <i class="fa-solid fa-dollar"></i> 22,50
+                </div>
+                <div class="product_score_box">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </a>
+
+            <a class="swiper-slide product_box" href="./product.html">
+                <img src="./public/images/products/1.png" alt="product" />
+                <div class="product_title">Mass Gainer</div>
+                <div class="product_brand">OPTIMUM NUTRITION</div>
+                <div class="product_price">
+                    <i class="fa-solid fa-dollar"></i> 22,50
+                </div>
+                <div class="product_score_box">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </a>
+
+            <a class="swiper-slide product_box" href="./product.html">
+                <img src="./public/images/products/1.png" alt="product" />
+                <div class="product_title">Mass Gainer</div>
+                <div class="product_brand">OPTIMUM NUTRITION</div>
+                <div class="product_price">
+                    <i class="fa-solid fa-dollar"></i> 22,50
+                </div>
+                <div class="product_score_box">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </a>
+
+            <a class="swiper-slide product_box" href="./product.html">
+                <img src="./public/images/products/1.png" alt="product" />
+                <div class="product_title">Mass Gainer</div>
+                <div class="product_brand">OPTIMUM NUTRITION</div>
+                <div class="product_price">
+                    <i class="fa-solid fa-dollar"></i> 22,50
+                </div>
+                <div class="product_score_box">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script>
         // header sign buttons
         let u_h_i = document.querySelector(".u_h_i");
@@ -462,6 +550,16 @@
 
         menuIcon.addEventListener("click", () => menuBox.classList.add("show"))
         closeIcon.addEventListener("click", () => menuBox.classList.remove("show"))
+
+        // swiper slider
+        let swiper = new Swiper(".swiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+            },
+        });
     </script>
 </body>
 
