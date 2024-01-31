@@ -9,14 +9,14 @@
     width: 60%;
 }
 
-.right_section {
+.blog_section .right_section {
     width: 30%;
 }
 
 .news_box {
     background-color: #0f0f0f;
-    width: calc(100% - 100px);
-    padding: 50px;
+    width: 100%;
+    padding: 0px;
     color: #fff;
 }
 
