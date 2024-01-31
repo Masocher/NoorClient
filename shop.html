@@ -50,6 +50,34 @@
         <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
     </header>
 
+    <div class="menu_box">
+        <div class="close_icon"><i class="fa-solid fa-close"></i></div>
+
+        <div class="menu_links">
+            <a class="m_link h_link" href="./index.html">Home</a>
+            <a class="m_link h_link" href="./shop.html">Shop</a>
+            <a class="m_link h_link" href="./blog.html">Blog</a>
+            <a class="m_link h_link" href="./contact.html">Contact</a>
+        </div>
+
+        <div class="menu_right_box">
+            <div class="m_b_i header_icon">
+                <i class="fa-solid fa-heart"></i>
+                <div class="red_badge">2</div>
+            </div>
+
+            <div class="m_b_i header_icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="red_badge">3</div>
+            </div>
+        </div>
+
+        <div class="menu_buttons">
+            <a class="sign_link" href="./sign-in.html">Sign In</a>
+            <a class="sign_link sign_up_link" href="./sign-up.html">Sign Up</a>
+        </div>
+    </div>
+
     <div class="categories">
         <div class="category_box" onclick="selectCategory(0)">
             <img src="./public/images/categories/amino.png" alt="category-image" />
@@ -712,6 +740,14 @@
             shopCountiner.forEach(sc => sc.classList.remove("show"))
             shopCountiner[num + 1].classList.add("show")
         };
+
+        // menu box
+        let menuBox = document.querySelector(".menu_box")
+        let menuIcon = document.querySelector(".menu_icon")
+        let closeIcon = document.querySelector(".close_icon")
+
+        menuIcon.addEventListener("click", () => menuBox.classList.add("show"))
+        closeIcon.addEventListener("click", () => menuBox.classList.remove("show"))
     </script>
 </body>
 
