@@ -28,6 +28,7 @@ body {
 .top_section_filter_boxes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     position: absolute;
     top: 50px;
@@ -50,7 +51,7 @@ body {
 
 .swiper {
     width: calc(100% - 250px);
-    margin: 50px 0;
+    margin: 50px;
 }
 
 .swiper-slide {
@@ -79,5 +80,27 @@ body {
     .filter_box {
         font-size: 12px;
         margin: 0 5px;
+    }
+
+    .swiper {
+        width: 100%;
+        margin: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .filter_box {
+        font-size: 10px;
+        margin: 3px;
+    }
+
+    .background_image {
+        height: 470px;
+    }
+}
+
+@media (max-width: 374px) {
+    .background_image {
+        height: 500px;
     }
 }
